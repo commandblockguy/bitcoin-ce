@@ -13,9 +13,8 @@ struct block {
 	uint32_t nonce;
 };
 
-extern struct block block;
-
-// Returns true if block was mined
-bool mine_loop(void);
+// start and end addresses for the miner function
+extern uint8_t mine_func_start[];
+extern uint8_t mine_func_end[];
 
 #endif
